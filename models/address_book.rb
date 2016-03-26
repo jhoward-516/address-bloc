@@ -49,4 +49,10 @@ class AddressBook
         
         return nil
     end
+    
+    def nuke_entries
+        entries.each do |entry|
+        entries.delete(entry)
+        end
+    end
 end
